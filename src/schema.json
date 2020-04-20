@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "VicodersCliExampleHandler",
+  "title": "Vicoders CLI example handler",
+  "type": "object",
+  "description": "Example handler",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of component",
+      "default": "VC Contact Info",
+      "x-prompt": "Name of component"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of component",
+      "default": "VC Contact Info Gutenburg Block",
+      "x-prompt": "Description of component"
+    },
+    "category": {
+      "type": "string",
+      "description": "Category of component",
+      "default": "layout",
+      "enum": ["common", "formatting", "layout", "widgets", "embed"],
+      "x-prompt": "Which category of your component?"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Icon of component",
+      "default": "welcome-add-page",
+      "x-prompt": "Which category of your component?"
+    },
+    "align": {
+      "type": "string",
+      "description": "Component Align",
+      "default": "full",
+      "enum": ["left", "right", "full"],
+      "x-prompt": "Component Align"
+    },
+    "path": {
+      "type": "string",
+      "description": "The root path of project",
+      "default": "/"
+    }
+  }
+}
+

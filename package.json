@@ -1,0 +1,32 @@
+{
+  "name": "javascript-nsilly-image-module",
+  "version": "0.0.0",
+  "description": "A blank schematics",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && jasmine src/**/*_spec.js"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^9.0.2",
+    "@angular-devkit/schematics": "^8.3.24",
+    "@schematics/angular": "^8.3.24",
+    "@types/decompress": "^4.2.3",
+    "@types/inquirer": "^6.5.0",
+    "@types/jasmine": "^3.3.9",
+    "@types/node": "^8.0.31",
+    "@types/shelljs": "^0.8.6",
+    "@vicoders/console": "^2.0.0",
+    "decompress": "^4.2.0",
+    "inquirer": "^7.0.4",
+    "jasmine": "^3.3.1",
+    "ora": "^4.0.3",
+    "shelljs": "^0.8.3",
+    "typescript": "~3.5.3"
+  }
+}
